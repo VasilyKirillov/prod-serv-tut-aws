@@ -17,6 +17,9 @@ spring:
           apply_to_ddl: false
     database-platform: org.hibernate.dialect.PostgreSQL10Dialect
 
+order-service:
+  url: ${ORDER_SERVICE_URL:http://localhost:9090}
+
 logging:
   level:
     org.hibernate.SQL: INFO

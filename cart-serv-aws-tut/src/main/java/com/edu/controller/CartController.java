@@ -37,4 +37,9 @@ private final CartService service;
     public void putProduct(@PathVariable long id, @RequestBody ProductEntity product) {
         service.putProduct(id, product);
     }
+
+    @GetMapping("/checkout/{id}")
+    public void checkout(@PathVariable long id) {
+        service.checkout(id);
+    }
 }

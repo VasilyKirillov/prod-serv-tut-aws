@@ -13,7 +13,6 @@ public class Product {
     private String title;
     private String description;
     private double price;
-    private int qty;
 
     public Product(ProductEntity entity) {
         this.productId = entity.getProductId();
