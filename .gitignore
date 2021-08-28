@@ -1,6 +1,6 @@
 HELP.md
-target/
-.gradle/
+**/target/
+**/.gradle/
 docker/*.jar
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
