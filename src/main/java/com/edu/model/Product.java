@@ -1,31 +1,18 @@
 package com.edu.model;
 
 public class Product {
-    private Long id;
+    private long id;
     private long brandId;
     private long categoryId;
     private String title;
     private String description;
     private double price;
 
-    public Product() {
-    }
-
-    public Product(Long id, long brandId, long categoryId, String title, String description, double price) {
-        this.id = id;
-        this.brandId = brandId;
-        this.categoryId = categoryId;
-        this.title = title;
-        this.description = description;
-        this.price = price;
-    }
-
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
