@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/public}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASS:postgres}
+    platform: postgres
+    initialization-mode: ${DB_INIT:always}
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        validator:
+          apply_to_ddl: false
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+
+logging:
+  level:
+    org.hibernate.SQL: INFO
+    org.hibernate.type: TRACE
+    org.springframework: INFO
